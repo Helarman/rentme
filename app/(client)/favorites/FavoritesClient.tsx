@@ -77,11 +77,12 @@ const FavoritesClient: React.FC<FavoritesClientProps> = ({
           >
 
             {listings.map((listing: any) => (
-              <ListingCard
-                currentUser={currentUser}
-                key={listing.id}
-                data={listing}
-              />
+              <div key={listing.id}>
+                <ListingCard
+                  currentUser={currentUser}
+                  data={listing}
+                />
+              </div>
             ))}
           </div>
         </div>

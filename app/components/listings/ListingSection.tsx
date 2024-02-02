@@ -38,32 +38,6 @@ const ListingSection = ({ listings, currentUser }) => {
             </section >
         </div >
 
-
-        /*<Container>
-            <div>
-                <div className="mx-auto max-w-screen-xl py-8 sm:py-12">
-                    <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-                        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-                            Select a car
-                        </h2>
-                        <p className="text-base text-gray-700 md:text-lg">
-                            Some of our cars
-                        </p>
-                    </div>
-
-                    <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    {promotedListings && promotedListings.map((listing: any) => (
-                        <ListingCard
-                            currentUser={currentUser}
-                            key={listing.id}
-                            data={listing}
-                        />
-                    ))}
-                    </ul>
-                </div>
-            </div>
-        </Container>*/
-
     )
 };
 

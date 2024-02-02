@@ -22,7 +22,7 @@ const TestimonalsSection = () => {
                     </div>
                     <div className="flex flex-wrap -mx-4">
                         {TestimonalsList && TestimonalsList.map(({ name, avatar, text }) => (
-                            <div className="px-4 relative w-full md:w-3/12">
+                            <div className="px-4 relative w-full md:w-3/12" key={name}>
                                 <Testimonal name={name} avatar={avatar} text={text}/>
                             </div> 
                         ))}
