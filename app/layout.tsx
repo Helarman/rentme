@@ -1,5 +1,5 @@
-import { Roboto } from 'next/font/google'
 
+import { Roboto } from 'next/font/google'
 
 
 import ToasterProvider from '@/app/providers/ToasterProvider';
@@ -15,10 +15,10 @@ export const metadata = {
   description: 'Car rent app',
 }
 
-const font = Roboto({
+const roboto = Roboto({
   subsets: ['latin'],
   weight: '400'
-});
+})
 
 export default async function RootLayout({
   children,
@@ -29,7 +29,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={roboto.className}>
         <ToasterProvider />
         <LoginModal />
         <RegisterModal />
