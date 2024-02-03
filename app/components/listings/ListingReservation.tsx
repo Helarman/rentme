@@ -60,6 +60,7 @@ const ListingReservation: React.FC<
           <Button
             disabled={disabled}
             label="Rent"
+            type='primary'
             onClick={onSubmit}
           />
         </div>

@@ -21,5 +21,6 @@ const ProfilePage = async () => {
     </ClientOnly>
   );
 }
- 
+
+
 export default ProfilePage;

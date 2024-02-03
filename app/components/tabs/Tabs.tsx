@@ -3,7 +3,6 @@
 import { useState } from 'react';
 
 const Tabs = ({ children }) => {
-    console.log(children)
 
     const [activeTab, setActiveTab] = useState(children[0].props.label);
 
@@ -39,11 +38,11 @@ const Tabs = ({ children }) => {
     );
 };
 
-const Tab = ({ label, children }) => {
+const Tab = ({label, children }) => {
     return (
-        <div label={label} className="hidden">
+        <option label={label} className="hidden">
             {children}
-        </div>
+        </option>
     );
 };
 export { Tabs, Tab };

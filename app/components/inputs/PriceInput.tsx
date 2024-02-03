@@ -1,6 +1,6 @@
 'use client'
 
-import RangeSlider from "react-range-slider-input"; // fix later or ignore
+import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
 
 export type PriceValue = number[];

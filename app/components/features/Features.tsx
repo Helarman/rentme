@@ -12,7 +12,7 @@ const Features = () => {
         <div className="container mx-auto px-4">
           <div className="mb-12 flex flex-wrap -mx-4 justify-start">
             <div className="px-4 relative w-full lg:w-8/12 text-left">
-              <h3 className="text-3xl font-bold mt-3 mb-1 text-gray-700">We are the best and here's why</h3>
+              <h3 className="text-3xl font-bold mt-3 mb-1 text-gray-700">We are the best and heres why</h3>
               <p className="mt-2 mb-4 text-xl leading-relaxed text-gray-500">Our strengths and key features</p>
             </div>
           </div>

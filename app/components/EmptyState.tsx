@@ -40,6 +40,7 @@ const EmptyState: React.FC<EmptyStateProps> = ({
             outline
             label="Remove all filters"
             onClick={() => router.push('/')}
+            type='primary'
           />
         )}
       </div>

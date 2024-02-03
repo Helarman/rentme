@@ -112,3 +112,4 @@ const Cars = async ({ searchParams }: CarsProps) => {
 };
 
 export default Cars;
+export const dynamic = 'force-dynamic'

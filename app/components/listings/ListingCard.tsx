@@ -154,11 +154,11 @@ const ListingCard: React.FC<ListingCardProps> = ({
                 text-gray-500 
                 leading-relaxed"
             >
-              {reservation && reservation.status === 'created' && <Badge type='warning' title={`${reservation.status}`} wIcon={false} />}
-              {reservation && reservation.status === 'processed' && <Badge type='primary' title={`${reservation.status}`} wIcon={false} />}
-              {reservation && reservation.status === 'started' && <Badge type='success' title={`${reservation.status}`} wIcon={false} />}
-              {reservation && reservation.status === 'finished' && <Badge type='secondary' title={`${reservation.status}`} wIcon={false} />}
-              {reservation && reservation.status === 'canceled' && <Badge type='danger' title={`${reservation.status}`} wIcon={false} />}
+              {reservation && reservation.status === 'created' && <Badge type='warning' title={`${reservation.status}`}  />}
+              {reservation && reservation.status === 'processed' && <Badge type='primary' title={`${reservation.status}`}  />}
+              {reservation && reservation.status === 'started' && <Badge type='success' title={`${reservation.status}`}  />}
+              {reservation && reservation.status === 'finished' && <Badge type='secondary' title={`${reservation.status}`}  />}
+              {reservation && reservation.status === 'canceled' && <Badge type='danger' title={`${reservation.status}`}  />}
             </p>
 
             <div

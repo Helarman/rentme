@@ -105,6 +105,7 @@ const TripsClient: React.FC<TripsClientProps> = ({
             {reservations.map((reservation: any) => (
               <ListingCard
                 short
+                key={reservation.id}
                 data={reservation.listing}
                 reservation={reservation}
                 actionId={reservation.id}
