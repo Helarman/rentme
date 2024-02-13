@@ -29,15 +29,18 @@ const ListingReservation: React.FC<
     return (
       <div
         className="
-      bg-white 
-        rounded-xl 
-        border-[1px]
-      border-neutral-200 
-        overflow-hidden
-      "
+          mt-3
+          md:mt-0
+          w-full
+          bg-white 
+          rounded-xl 
+          border-[1px]
+          border-neutral-200 
+          overflow-hidden
+        "
       >
         <div className="
-      flex flex-row items-center gap-1 p-4">
+          flex flex-row items-center gap-1 p-4">
           <div>
             <span className="text-2xl font-semibold text-blue-500">
               € {price}
@@ -81,7 +84,7 @@ const ListingReservation: React.FC<
             Total
           </div>
           <div>
-            $ {totalPrice}
+            € {totalPrice}
           </div>
         </div>
       </div>

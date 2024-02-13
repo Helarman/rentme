@@ -114,6 +114,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
       }
     }
   }, [dateRange, listing.price]);
+  console.log(listing)
   return (
     <div className="w-full">
       <div
@@ -164,22 +165,25 @@ const ListingClient: React.FC<ListingClientProps> = ({
               sm:flex-nowrap
               justify-between"
           >
-            <div className="md:pr-0 relative w-full md:w-6/12  ">
+            <div className="relative w-full md:w-6/12  ">
               <img className="w-full rounded-xl" src={listing.imageSrc} />
             </div>
 
-            <div className="md:pr-0 relative w-full md:w-2/12  ">
+            <div className="relative w-full md:w-2/12  ">
               <ListingInfo
-                title={listing.title}
-                user={listing.user}
-                description={listing.description}
                 bagsCount={listing.bagsCount}
                 seatsCount={listing.seatsCount}
                 powerCount={listing.powerCount}
+                fuelCount={listing.fuelCount}
+                tankCount={listing.tankCount}
+                gearboxCount={listing.gearboxCount}
+                gearboxType={listing.gearboxType}
+                drivetrainType={listing.drivetrainType}
+                engineType={listing.engineType}
               />
             </div>
 
-            <div className="md:pr-0 px-4 relative w-full md:w-3/12">
+            <div className="relative w-full md:w-3/12">
               <ListingReservation
                 price={listing.price}
                 totalPrice={totalPrice}
