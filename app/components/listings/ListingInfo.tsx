@@ -33,6 +33,8 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
   engineType,
 }) => {
 
+  const distance: number = Math.ceil(tankCount / fuelCount)*100
+
   return (
     <div
       className="
@@ -201,7 +203,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
               text-blue-500
             "
           >
-            {tankCount / fuelCount * 100}
+            {distance}
           </span>
 
           <span

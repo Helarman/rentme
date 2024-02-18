@@ -93,6 +93,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
         alt={data.title}
         src={data.imageSrc}
         className="
+          h-56
           w-full 
           group-hover:scale-110 
           transition"
